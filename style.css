@@ -62,6 +62,11 @@ body {
     background-color: #aaa;
 }
 
+.extras button:hover {
+    background-color: #999;
+    cursor: pointer;
+}
+
 .numbers {
     display: flex;
     flex-direction: column;
@@ -73,9 +78,19 @@ body {
     color: #fff;
 }
 
+.numbers button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
 .operations button {
     background-color: orange;
     color: white;
+}
+
+.operations button:hover {
+    background-color: #ee9400;
+    cursor: pointer;
 }
 
 .row {
