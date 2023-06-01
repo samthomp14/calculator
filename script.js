@@ -45,5 +45,15 @@ numberButtons.forEach(button => button.addEventListener('click', changeDisplay))
 
 function changeDisplay(e) {
     const display = document.querySelector('.text');
-    display.textContent += e.target.textContent;
+    if (display.textContent.replace('.','').length < 9){
+        if (e.target.textContent == '.') {
+            e.target.removeEventListener('click', changeDisplay); // deactivate decimal point
+        }
+    
+        if (display.textContent == '0') {
+            display.textContent = e.target.textContent;
+        } else {
+            display.textContent += e.target.textContent;
+        }
+    }
 }
