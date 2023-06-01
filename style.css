@@ -93,6 +93,11 @@ body {
     cursor: pointer;
 }
 
+.operations button.activate {
+    background-color: white;
+    color: orange;
+}
+
 .row {
     display: flex;
     gap: 5px;
